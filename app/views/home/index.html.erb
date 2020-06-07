@@ -1,0 +1,11 @@
+<% if current_user %>
+Logged in as <%= current_user.name %> 
+<%=  link_to 'Log_Out', logout_path %>
+<p>Click on logout to be out of the session </p>
+<% else %>
+ <%=  link_to 'Sign Up', signup_path %>
+ <%=  link_to 'Log In', login_path %>
+ <p>Please sign in or login on clicking above links </p>
+<% end %>
+<p id='notice'><%= notice %></p>
+
