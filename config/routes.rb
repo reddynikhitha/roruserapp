@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :lastnames
+  
   get 'home/index'
   #get 'sessions/new'
   #get 'sessions/create'
